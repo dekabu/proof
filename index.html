@@ -35,25 +35,25 @@ $$x_n=\left(\left(1+\frac1n\right)^n\right)^2=\left(\left(1+\frac1n\right)^2\rig
 $$\lim x_n=\lim\left(\left(1+\frac1n\right)^2\right)^n=\lim\left(\left(1+\frac1n\right)\left(1+\frac1n\right)\right)^n=\lim\left[\left(1+\frac1n\right)^n\left(1+\frac1n\right)^n\right]=\lim\left(1+\frac1n\right)^n\lim\left(1+\frac1n\right)^n=e\cdot e=e^2$$
 <br><br>
 Последовательность
-$$x_n'=\left(\left(1+\frac1{n-1}\right)^{n-1}\right)^2=\left(1+\frac2{n-1}+\frac1{(n-1)^2}\right)^{n-1}$$
+$$x_n'=\left(\left(1+\frac1{n+1}\right)^{n+1}\right)^2=\left(1+\frac2{n+1}+\frac1{(n+1)^2}\right)^{n+1}$$
 пробегает те же значения и потому имеет тот же предел:
 $$\lim x_n'=\lim x_n=e^2$$
 <br><br>
 Рассмотрим немного отличную последовательность
-$$x_n''=\left(\left(1+\frac1{n-1}\right)^n\right)^2=\left(1+\frac2{n-1}+\frac1{(n-1)^2}\right)^n$$
+$$x_n''=\left(\left(1+\frac1{n+1}\right)^n\right)^2=\left(1+\frac2{n+1}+\frac1{(n+1)^2}\right)^n$$
 Для неё пределом тоже послужит $e^2$:
-$$\lim x_n''=\lim\left(1+\frac2{n-1}+\frac1{(n-1)^2}\right)^n=\lim\left[\left(1+\frac2{n-1}+\frac1{(n-1)^2}\right)^{n-1}\left(1+\frac2{n-1}+\frac1{(n-1)^2}\right)\right]=\lim\left(1+\frac2{n-1}+\frac1{(n-1)^2}\right)^{n-1}\lim\left(1+\frac2{n-1}+\frac1{(n-1)^2}\right)=e^2\cdot1=e^2$$
+$$\lim x_n''=\lim\left(1+\frac2{n+1}+\frac1{(n+1)^2}\right)^n=\lim\frac{\left(1+\frac2{n+1}+\frac1{(n+1)^2}\right)^{n+1}}{\left(1+\frac2{n+1}+\frac1{(n+1)^2}\right)}=\frac{\lim\left(1+\frac2{n+1}+\frac1{(n+1)^2}\right)^{n+1}}{\lim\left(1+\frac2{n+1}+\frac1{(n+1)^2}\right)}=\frac{e^2}1=e^2$$
 <br><br>
 Введём новую (и почти последнюю, честно) последовательность
 $$y_n=\left(1+\frac2n\right)^n$$
 <br><br>
 Я утверждаю, что для каждого её члена справедливо неравенство:
-$$\left(1+\frac2{n-1}+\frac1{(n-1)^2}\right)^n&lt;\left(1+\frac2n\right)^n&lt;\left(1+\frac2n+\frac1{n^2}\right)^n$$
-Так как основания степеней положительны, а показатель $n&gt;0$, это равносильно следующему:
-$$1+\frac2{n-1}+\frac1{(n-1)^2}&lt;1+\frac2n&lt;1+\frac2n+\frac1{n^2}$$
+$$\left(1+\frac2{n+1}+\frac1{(n+1)^2}\right)^n&lt;\left(1+\frac2n\right)^n&lt;\left(1+\frac2n+\frac1{n^2}\right)^n$$
+Так как основания степени больше $1$, а показатель $n&gt;0$, это равносильно следущему:
+$$1+\frac2{n+1}+\frac1{(n+1)^2}&lt;1+\frac2n&lt;1+\frac2n+\frac1{n^2}$$
 Правое неравенство элементарно, а левое предоставляется читателю в качестве упражнения.<br>
 Итак, снова
-$$\left(1+\frac2{n-1}+\frac1{(n-1)^2}\right)^n&lt;\left(1+\frac2n\right)^n&lt;\left(1+\frac2n+\frac1{n^2}\right)^n$$
+$$\left(1+\frac2{n+1}+\frac1{(n+1)^2}\right)^n&lt;\left(1+\frac2n\right)^n&lt;\left(1+\frac2n+\frac1{n^2}\right)^n$$
 или (смотрите определения)
 $$x_n''&lt;y_n&lt;x_n'$$
 Получилось, что наша последовательность "зажата" между членами последовательностей $x_n''$ и $x_n'$, а они стремятся к $e^2$.<br>
